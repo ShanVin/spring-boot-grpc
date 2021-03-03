@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-boot-grpc-consumer
+  messages:
+    encoding: UTF-8
+
+server:
+  port: 9051
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    context-path: /
+  tomcat:
+    uri-encoding: UTF-8
+    basedir: ../tomcat/${server.port}
